@@ -5,5 +5,5 @@ int main()
     cout << "hello world" << "\trun baby run";
     cout << endl; // use to change the line
     cout << "\n"; // use to change the line
-    cout << "hello baby";
+    cout << "hello baby";   // use to print text
 }

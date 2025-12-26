@@ -1,0 +1,7 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "editor.parameterHints.enabled": false,
+    "editor.parameterHints.cycle": false,
+    "C_Cpp.inlayHints.parameterNames.hideLeadingUnderscores": false,
+    "C_Cpp.inlayHints.parameterNames.suppressWhenArgumentContainsName": false
+}

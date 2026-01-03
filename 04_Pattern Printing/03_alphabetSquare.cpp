@@ -16,14 +16,16 @@ int main()
     cout << "Enter Columns : "; // Ask the user to enter number of columns
     cin >> columns;             // Take input from user and store it in 'columns'
 
-    for (int i = 1; i <= rows; i++) // Outer loop: runs from 1 to total number of rows
+    for (int i = 1; i <= rows; i++) // Outer loop: controls number of rows
     {
-        for (int j = 97; j <= columns; j++) // Inner loop: runs from 1 to total number of columns
+        ch = 'A'; // Start character as 'A' for each row
+
+        for (int j = 1; j <= columns; j++) // Inner loop: controls number of columns
         {
-            
-            cout << j = (char)ch << " "; // Print a star followed by a space (on the same line)
+            cout << ch << " "; // Print current character
+            ch++;              // Move to next character (A → B → C → D …)
         }
 
-        cout << endl; // Move to next line after finishing one full row
+        cout << endl; // Go to next line after each row
     }
 }

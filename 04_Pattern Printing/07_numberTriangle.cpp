@@ -1,7 +1,7 @@
-// Print the given pattern :- * 
-//                            * * 
-//                            * * *
-//                            * * * * 
+// Print the given pattern :- 1 
+//                            1 2 
+//                            1 2 3 
+//                            1 2 3 4
 
 #include <iostream>
 using namespace std;
@@ -14,9 +14,9 @@ int main()
 
     for (int i = 1; i <= rows; i++) // Outer loop: runs from 1 to total number of rows
     {
-        for (int j = 1; j <= i; j++) // Inner loop: prints stars (runs only up to i)
+        for (int j = 1; j <= i; j++) // Inner loop: prints numbers (runs only up to i)
         {
-            cout << "*" << " "; // Print a star followed by a space (on the same line)
+            cout << j << " "; // Print a star followed by a space (on the same line)
         }
 
         cout << endl; // Move to next line after finishing one full row

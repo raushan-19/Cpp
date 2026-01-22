@@ -43,6 +43,12 @@ int main()
     Student s3("Pranav Prakash", 33, 3.5);
     // Creates object s3 using parameterized constructor
 
+    Student s4 = s1;        //deep copy
+    s4.name = "Aman";
+
+    Student s5(s1);     //copy constructor - Deep copy
+    s5.name = "Sarabjeet";  
+
     cout << s1.name << " " << s1.rollno << " " << s1.cgpa << endl;
     // Prints details of student s1
 
@@ -51,6 +57,12 @@ int main()
 
     cout << s3.name << " " << s3.rollno << " " << s3.cgpa << endl;
     // Prints details of student s3
+
+    cout << s4.name << " " << s4.rollno << " " << s4.cgpa << endl;
+    // Prints details of student s4
+
+    cout << s5.name << " " << s5.rollno << " " << s5.cgpa << endl;
+    // Prints details of student s5
 
     return 0;
 }

@@ -16,34 +16,27 @@ public:            // Makes the data members and functions accessible outside th
         this->average = average; // Assigns the parameter 'average' to the class variable 'average'
         // 'this->' refers to the current object's data members
     }
-
-    // Member function to print cricketer details
-    void print()
-    {
-        cout << name << " " << runs << " " << average << endl;
-    }
-
-    // Member function to calculate number of matches played
-    int matches()
-    {
-        return runs / average; // Calculates matches using runs divided by average
-    }
 };
+
+void change(Cricketer* c){
+    (*c).average = 77.9;
+}
 
 int main()
 {
 
     // Creates object c1 and initializes it using constructor
     Cricketer c1("Virat Kohli", 24000, 55.3);
+    cout<<c1.average<<endl;
+
+    change(&c1);
+    cout<<c1.average<<endl;
 
     // Creates object c2 and initializes it using constructor
-    Cricketer c2("Rohit Sharma", 15000, 89.6);
+    // Cricketer c2("Rohit Sharma", 15000, 89.6);
 
-    c1.print(); // Calls print function for object c1
-    c2.print(); // Calls print function for object c2
-
-    cout << c1.matches() << endl; // Prints calculated matches for c1
-    cout << c2.matches() << endl; // Prints calculated matches for c2
+    // Cricketer* p1 = &c1;
+    // cout<<(*p1).runs<<endl;
 
     return 0;
 }
